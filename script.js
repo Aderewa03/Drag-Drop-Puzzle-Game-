@@ -89,11 +89,12 @@ function dragEnd(){
     turns += 1;
     document.getElementById("turns").innerText = turns;
 
-    if (turns >= 30) {
-        alert("Game Over! You’ve reached 30 turns.");
+    if (turns >= 50) {
+        alert("Game Over! You’ve reached 50 turns.");
         // Optional: stop further dragging
         document.querySelectorAll("#board img, #pieces img").forEach(img=>{
         img.draggable = false;
     });
 }
+
 }
